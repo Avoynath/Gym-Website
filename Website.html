@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gymbro Fitness</title>
+</head>
+<link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  body {
+    font-family: 'Baloo Bhai';
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    background: url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z3ltJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .left {
+    position: absolute;
+    left: 60px;
+    top: 20px;
+    display: inline-block;
+    /* border: 2px solid red; */
+  }
+
+  .left img {
+    width: 100px;
+    filter: invert(100%);
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .left div {
+    text-align: center;
+    line-height: 16px;
+    font-size: 22px;
+  }
+
+  .mid {
+    display: block;
+    width: 40%;
+    margin: 29px auto;
+    /* border: 2px solid green; */
+  }
+
+  .right {
+    position: absolute;
+    right: 34px;
+    top: 42px;
+    display: inline-block;
+    /* border: 2px solid yellow; */
+  }
+
+  .navbar {
+    display: inline-block;
+  }
+
+  .navbar li {
+    display: inline-block;
+  }
+
+  .navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 30px 20px;
+    font-size: 20px;
+  }
+
+  .navbar li a:hover,
+  .navbar li a.active {
+    text-decoration: underline;
+    color: gray;
+  }
+
+
+  .btn {
+    font-family: 'Baloo Bhai';
+    margin: 0px 10px;
+    color: white;
+    background-color: black;
+    padding: 4px 14px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: rgb(61, 56, 56);
+  }
+
+  .container {
+    /* border: 2px solid white; */
+    margin: 70px 80px;
+    padding: 75px;
+    width: 33%;
+    border-radius: 30px;
+  }
+
+  .form-group input {
+    font-family: 'Baloo Bhai';
+    text-align: center;
+    display: block;
+    width: 500px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 10px;
+  }
+
+  .container h1 {
+    text-align: center;
+  }
+
+  .container button {
+    display: block;
+    width: 35%;
+    font-size: 20px;
+  }
+</style>
+
+<body>
+  <header class="header">
+    <!-- left box for logo -->
+    <div class="left">
+      <img src="https://www.freepnglogos.com/uploads/dumbbell-png/dumbbell-svg-png-icon-download-14.png" alt="">
+      <div>Gymbro Fitness</div>
+    </div>
+    <!-- mid box for navbar -->
+    <div class="mid">
+      <ul class="navbar">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Fitness Calculator</a></li>
+        <li><a href="#">Reviews</a></li>
+      </ul>
+    </div>
+    <!-- right box for buttons -->
+    <div class="right">
+      <button class="btn">Call us Now</button>
+      <button class="btn">Email Us</button>
+    </div>
+  </header>
+  <div class="container">
+    <h1>Join the best Gym of India now</h1>
+    <form action="noaction.php">
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter your age">
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Gender">
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Address">
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Phone Number">
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Email Id">
+      </div>
+      <button class="btn">Submit</button>
+    </form>
+
+  </div>
+</body>
+
+</html>
